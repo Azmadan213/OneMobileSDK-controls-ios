@@ -35,7 +35,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         vc.view.tintColor = .blue
         vc.props = props()
         
-        window = UIWindow(frame: UIScreen.main.bounds)
+        window = UIWindow(frame: CGRect(x: 0.0, y: 0.0, width: 375.0, height: 812.0))
+        let image = UIImage(named: "maskTwo")!
+        let imageView = UIImageView(image: image)
+        imageView.frame = (window?.bounds)!
+       /* let image
+        let imageView
+        
+        imageView.frame = UIScreen.main.bounds*/
+        window?.mask = imageView
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         
