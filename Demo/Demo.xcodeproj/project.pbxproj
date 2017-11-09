@@ -11,12 +11,12 @@
 		06208AAD1FAC869D00085FF5 /* SnapshotTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06208AA51FAC869D00085FF5 /* SnapshotTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		06208ABC1FAC874700085FF5 /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06208ABB1FAC874700085FF5 /* HostViewController.swift */; };
 		0691934A1FB0ACF9006D5484 /* CaseWithThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069193491FB0ACF9006D5484 /* CaseWithThumbnail.swift */; };
-		0691934C1FB0AD1D006D5484 /* CaseWithEmptyProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0691934B1FB0AD1D006D5484 /* CaseWithEmptyProgress.swift */; };
 		0691934E1FB0AD36006D5484 /* CaseWithConnectedProgressAndBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0691934D1FB0AD36006D5484 /* CaseWithConnectedProgressAndBuffer.swift */; };
 		069193501FB0AD4E006D5484 /* CaseWithFullProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0691934F1FB0AD4E006D5484 /* CaseWithFullProgress.swift */; };
 		069193521FB0AD67006D5484 /* CaseWithLoadedProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069193511FB0AD67006D5484 /* CaseWithLoadedProgress.swift */; };
 		069193541FB0AE29006D5484 /* CaseWithPlayTimeIsLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069193531FB0AE29006D5484 /* CaseWithPlayTimeIsLoading.swift */; };
 		069193561FB0AE3C006D5484 /* CaseWithPlayTimeIsNotLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069193551FB0AE3C006D5484 /* CaseWithPlayTimeIsNotLoading.swift */; };
+		8B0531B91FB4BAE9002AA33F /* CaseWithEmptyProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0691934B1FB0AD1D006D5484 /* CaseWithEmptyProgress.swift */; };
 		8B74AE1B1FB33C8C007B3F47 /* SnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06208ABD1FAC875400085FF5 /* SnapshotTest.swift */; };
 		8B74AE1C1FB33D05007B3F47 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06208AB21FAC86B300085FF5 /* FBSnapshotTestCase.framework */; };
 		8B74AE1F1FB33EB9007B3F47 /* PlayerControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE135131F0FD36500C47354 /* PlayerControls.framework */; };
@@ -419,8 +419,8 @@
 				0691934E1FB0AD36006D5484 /* CaseWithConnectedProgressAndBuffer.swift in Sources */,
 				069193501FB0AD4E006D5484 /* CaseWithFullProgress.swift in Sources */,
 				0691934A1FB0ACF9006D5484 /* CaseWithThumbnail.swift in Sources */,
+				8B0531B91FB4BAE9002AA33F /* CaseWithEmptyProgress.swift in Sources */,
 				069193521FB0AD67006D5484 /* CaseWithLoadedProgress.swift in Sources */,
-				0691934C1FB0AD1D006D5484 /* CaseWithEmptyProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

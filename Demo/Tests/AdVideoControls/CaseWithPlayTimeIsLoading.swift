@@ -23,12 +23,12 @@ class CaseWithPlayTimeIsLoading: SnapshotTest {
         return controller
     }
     
-    func testPortrait() {
-        verify(controller, in: .portrait)
-    }
+    //func testPortrait() {
+    //    verify(controller, in: .portrait)
+    //}
     
-    func testLandscape() {
-        verify(controller, in: .landscape)
-    }
+    //func testLandscape() {
+    //    verify(controller, in: .landscape)
+    //}
 }
 

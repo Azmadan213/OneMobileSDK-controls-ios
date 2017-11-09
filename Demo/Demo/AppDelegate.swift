@@ -29,23 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        let vc = DefaultControlsViewController()
-        vc.view.backgroundColor = .green
-        vc.view.tintColor = .blue
-        vc.props = props()
-        
-        window = UIWindow(frame: CGRect(x: 0.0, y: 0.0, width: 375.0, height: 812.0))
-        let image = UIImage(named: "maskTwo")!
-        let imageView = UIImageView(image: image)
-        imageView.frame = (window?.bounds)!
-       /* let image
-        let imageView
-        
-        imageView.frame = UIScreen.main.bounds*/
-        window?.mask = imageView
-        window?.rootViewController = vc
-        window?.makeKeyAndVisible()
+    
         
         return true
     }

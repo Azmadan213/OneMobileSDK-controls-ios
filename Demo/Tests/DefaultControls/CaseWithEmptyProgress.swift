@@ -7,7 +7,10 @@
 //
 import UIKit
 import SnapshotTest
+
 @testable import PlayerControls
+
+//typealias Presentation = HostWindow.Presentation
 
 class CaseSeekbarWithEmtyProgress: SnapshotTest{
     
@@ -43,12 +46,9 @@ class CaseSeekbarWithEmtyProgress: SnapshotTest{
         return controller
     }
     
-    func testPortrait() {
-        verify(controller, in: .portrait)
-    }
-    
-    func testLandscape() {
-        verify(controller, in: .landscape)
+    func test() {
+        verify(controller, presentation: HostWindow.Presentation.iPad.pro10.portrait.OneThirds)
+
     }
 }
 
