@@ -10,7 +10,7 @@ import SnapshotTest
 
 @testable import PlayerControls
 
-//typealias Presentation = HostWindow.Presentation
+typealias Presentation = HostWindow.Presentation
 
 class CaseSeekbarWithEmtyProgress: SnapshotTest{
     
@@ -47,8 +47,30 @@ class CaseSeekbarWithEmtyProgress: SnapshotTest{
     }
     
     func test() {
-        verify(controller, presentation: HostWindow.Presentation.iPad.pro10.portrait.OneThirds)
-
+        
+        verify(controller, for: Presentation.iPad.pro10.portrait.fullScreen)
+        verify(controller, for: Presentation.iPad.pro10.portrait.oneThirds)
+        verify(controller, for: Presentation.iPad.pro10.portrait.twoThirds)
+        verify(controller, for: Presentation.iPad.pro10.landscape.fullScreen)
+        verify(controller, for: Presentation.iPad.pro10.landscape.half)
+        verify(controller, for: Presentation.iPad.pro10.landscape.oneThirds)
+        verify(controller, for: Presentation.iPad.pro10.landscape.twoThirds)
+        
+        verify(controller, for: Presentation.iPad.pro9.portrait.fullScreen)
+        verify(controller, for: Presentation.iPad.pro9.portrait.oneThirds)
+        verify(controller, for: Presentation.iPad.pro9.portrait.twoThirds)
+        verify(controller, for: Presentation.iPad.pro9.landscape.fullScreen)
+        verify(controller, for: Presentation.iPad.pro9.landscape.half)
+        verify(controller, for: Presentation.iPad.pro9.landscape.oneThirds)
+        verify(controller, for: Presentation.iPad.pro9.landscape.twoThirds)
+        
+        verify(controller, for: Presentation.iPad.pro12.portrait.fullScreen)
+        verify(controller, for: Presentation.iPad.pro12.portrait.oneThirds)
+        verify(controller, for: Presentation.iPad.pro12.portrait.twoThirds)
+        verify(controller, for: Presentation.iPad.pro12.landscape.fullScreen)
+        verify(controller, for: Presentation.iPad.pro12.landscape.half)
+        verify(controller, for: Presentation.iPad.pro12.landscape.oneThirds)
+        verify(controller, for: Presentation.iPad.pro12.landscape.twoThirds)
     }
 }
 

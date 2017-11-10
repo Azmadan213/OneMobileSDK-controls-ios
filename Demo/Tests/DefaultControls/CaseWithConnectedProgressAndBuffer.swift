@@ -49,6 +49,6 @@ class CaseSeekbarWithConectedProgressAndBuffer: SnapshotTest {
     }
     
     func test() {
-        verify(controller, presentation: HostWindow.Presentation.iPad.pro10.portrait.OneThirds)
+        verify(controller, for: HostWindow.Presentation.iPad.pro10.portrait.oneThirds)
     }
 }
