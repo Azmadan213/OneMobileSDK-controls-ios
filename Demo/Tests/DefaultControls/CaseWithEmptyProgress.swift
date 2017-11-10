@@ -37,7 +37,7 @@ class CaseSeekbarWithEmtyProgress: SnapshotTest{
                 
                 controls.camera = DefaultControlsViewController.Props.Player.Item.Controls.Camera()
                 controls.camera?.angles.horizontal = 1.57
-                controls.camera?.angles.vertical = 1.57
+                controls.camera?.angles.vertical = 1.59
                 
                 controls.settings = .enabled(nop)
                 controls.legible = .external(external: .available(state: .active(text: "Let me tell you some very very very very very exiting story.")), control: DefaultControlsViewController.Props.Player.Item.Controls.MediaGroupControl())

@@ -96,7 +96,7 @@
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "RECORD_MODE"
-            value = "$TRUE"
+            value = "$FALSE"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

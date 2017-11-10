@@ -227,7 +227,7 @@ open class SnapshotTest: FBSnapshotTestCase {
     
     override open func setUp() {
         super.setUp()
-        recordMode = nil != ProcessInfo.processInfo.environment["RECORD_MODE"]
+        recordMode = false //nil != ProcessInfo.processInfo.environment["RECORD_MODE"]
         //isDeviceAgnostic = true
     }
     
