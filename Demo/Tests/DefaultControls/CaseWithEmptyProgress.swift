@@ -10,7 +10,6 @@ import SnapshotTest
 
 @testable import PlayerControls
 
-typealias Presentation = HostWindow.Presentation
 
 class CaseSeekbarWithEmtyProgress: SnapshotTest{
     
@@ -24,53 +23,69 @@ class CaseSeekbarWithEmtyProgress: SnapshotTest{
                 player.item = DefaultControlsViewController.Props.Player.Item.playable(
                     DefaultControlsViewController.Props.Player.Item.Controls { controls in
                         
-                controls.title = "Some title very very very very very very very very very long"
-                controls.seekbar = .init()
-                
-                controls.seekbar?.duration = 36543
-                controls.seekbar?.currentTime = 0
-                controls.seekbar?.progress = 0
-                controls.seekbar?.buffered = 0
-                
-                controls.live.isHidden = true
-                controls.playbackAction.play = nop
-                
-                controls.camera = DefaultControlsViewController.Props.Player.Item.Controls.Camera()
-                controls.camera?.angles.horizontal = 1.57
-                controls.camera?.angles.vertical = 1.57
-                
-                controls.settings = .enabled(nop)
-                controls.legible = .external(external: .available(state: .active(text: "Let me tell you some very very very very very exiting story.")), control: DefaultControlsViewController.Props.Player.Item.Controls.MediaGroupControl())
-            })
+                        controls.title = "Some title very very very very very very very very very long"
+                        
+                        controls.seekbar = .init()
+                        controls.seekbar?.duration = 36543
+                        controls.seekbar?.currentTime = 0
+                        controls.seekbar?.progress = 0
+                        controls.seekbar?.buffered = 0
+                        controls.seekbar?.seeker.state.stop = nop
+                        
+                        controls.live.isHidden = true
+                        controls.playbackAction.play = nop
+                        
+                        controls.camera = DefaultControlsViewController.Props.Player.Item.Controls.Camera()
+                        controls.camera?.angles.horizontal = 1.57
+                        controls.camera?.angles.vertical = 1.57
+                        
+                        controls.settings = .enabled(nop())
+                        controls.pictureInPictureControl = .unsupported
+                        controls.airplay = .hidden
+                        
+                        controls.legible = .external(external: .available(state: .active(text: "Let me tell you some very very very very very exiting story.")), control: DefaultControlsViewController.Props.Player.Item.Controls.MediaGroupControl())
+                })
         })
         return controller
     }
     
     func test() {
+        verify(controller, for: presentation.iPhone.X.portrait)
+        verify(controller, for: presentation.iPhone.X.landscapeLeft)
+        verify(controller, for: presentation.iPhone.X.landscapeRight)
         
-        verify(controller, for: Presentation.iPad.pro10.portrait.fullScreen)
-        verify(controller, for: Presentation.iPad.pro10.portrait.oneThirds)
-        verify(controller, for: Presentation.iPad.pro10.portrait.twoThirds)
-        verify(controller, for: Presentation.iPad.pro10.landscape.fullScreen)
-        verify(controller, for: Presentation.iPad.pro10.landscape.half)
-        verify(controller, for: Presentation.iPad.pro10.landscape.oneThirds)
-        verify(controller, for: Presentation.iPad.pro10.landscape.twoThirds)
+        verify(controller, for: presentation.iPhone.Eight.portrait)
+        verify(controller, for: presentation.iPhone.Eight.landscape)
         
-        verify(controller, for: Presentation.iPad.pro9.portrait.fullScreen)
-        verify(controller, for: Presentation.iPad.pro9.portrait.oneThirds)
-        verify(controller, for: Presentation.iPad.pro9.portrait.twoThirds)
-        verify(controller, for: Presentation.iPad.pro9.landscape.fullScreen)
-        verify(controller, for: Presentation.iPad.pro9.landscape.half)
-        verify(controller, for: Presentation.iPad.pro9.landscape.oneThirds)
-        verify(controller, for: Presentation.iPad.pro9.landscape.twoThirds)
+        verify(controller, for: presentation.iPhone.EightPlus.portrait)
+        verify(controller, for: presentation.iPhone.EightPlus.landscape)
         
-        verify(controller, for: Presentation.iPad.pro12.portrait.fullScreen)
-        verify(controller, for: Presentation.iPad.pro12.portrait.oneThirds)
-        verify(controller, for: Presentation.iPad.pro12.portrait.twoThirds)
-        verify(controller, for: Presentation.iPad.pro12.landscape.fullScreen)
-        verify(controller, for: Presentation.iPad.pro12.landscape.half)
-        verify(controller, for: Presentation.iPad.pro12.landscape.oneThirds)
-        verify(controller, for: Presentation.iPad.pro12.landscape.twoThirds)
+        verify(controller, for: presentation.iPhone.SE.portrait)
+        verify(controller, for: presentation.iPhone.SE.landscape)
+        
+        verify(controller, for: presentation.iPad.Pro9_7.Portrait.fullScreen)
+        verify(controller, for: presentation.iPad.Pro9_7.Portrait.OneThirds)
+        verify(controller, for: presentation.iPad.Pro9_7.Portrait.TwoThirds)
+        verify(controller, for: presentation.iPad.Pro9_7.Landscape.fullScreen)
+        verify(controller, for: presentation.iPad.Pro9_7.Landscape.oneThird)
+        verify(controller, for: presentation.iPad.Pro9_7.Landscape.twoThird)
+        verify(controller, for: presentation.iPad.Pro9_7.Landscape.half)
+        
+        verify(controller, for: presentation.iPad.Pro10_5.Portrait.fullScreen)
+        verify(controller, for: presentation.iPad.Pro10_5.Portrait.OneThirds)
+        verify(controller, for: presentation.iPad.Pro10_5.Portrait.TwoThirds)
+        verify(controller, for: presentation.iPad.Pro10_5.Landscape.fullScreen)
+        verify(controller, for: presentation.iPad.Pro10_5.Landscape.oneThird)
+        verify(controller, for: presentation.iPad.Pro10_5.Landscape.twoThird)
+        verify(controller, for: presentation.iPad.Pro10_5.Landscape.half)
+        
+        verify(controller, for: presentation.iPad.Pro12_9.Portrait.fullScreen)
+        verify(controller, for: presentation.iPad.Pro12_9.Portrait.oneThirds)
+        verify(controller, for: presentation.iPad.Pro12_9.Portrait.twoThirds)
+        verify(controller, for: presentation.iPad.Pro12_9.Landscape.fullScreen)
+        verify(controller, for: presentation.iPad.Pro12_9.Landscape.oneThird)
+        verify(controller, for: presentation.iPad.Pro12_9.Landscape.twoThird)
+        verify(controller, for: presentation.iPad.Pro12_9.Landscape.half)
     }
 }
 
