@@ -9,6 +9,7 @@ import UIKit
 import SnapshotTest
 @testable import PlayerControls
 
+
 class CaseWithPlayTimeIsNotLoading: SnapshotTest {
     
     var controller: AdVideoControls {
