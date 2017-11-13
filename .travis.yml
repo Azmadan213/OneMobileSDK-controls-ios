@@ -1,11 +1,5 @@
 language: Swif
 osx_image: xcode9.1
-sudo: true
 
-before_install:
- -brew install carthage
- -carthage update --platform iOS
- -sudo gem install fastlane -NV
- 
 script: 
  - fastlane test v
