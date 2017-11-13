@@ -3,8 +3,6 @@ osx_image: xcode9.1
 sudo: true
 
 before_install:
- -brew update
- -brew upgrate xctool
  -brew install carthage
  -carthage update --platform iOS
  -sudo gem install fastlane -NV
