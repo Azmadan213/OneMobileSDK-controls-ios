@@ -30,7 +30,7 @@ open class SnapshotTest: FBSnapshotTestCase {
         line: UInt = #line) {
         
         let window = HostWindow(presentation: presentation)
-        controller.view.backgroundColor = .red 
+        controller.view.backgroundColor = .red
         
         window.rootViewController = controller
         window.makeKeyAndVisible()

@@ -151,7 +151,7 @@ public class HostWindow: UIWindow {
                 public enum Portrait {
                     
                     public static let fullScreen = Presentation(
-                        name: "iPad 10.5 FullScreen",
+                        name: "iPad 10.5 Portrait FullScreen",
                         size: CGSize.iPad.Pro10_5,
                         traitCollection: UITraitCollection.iPad.fullScreen)
                     
@@ -191,7 +191,7 @@ public class HostWindow: UIWindow {
             public enum Pro9_7 {
                 public enum Portrait {
                     public static let fullScreen = Presentation(
-                        name: "iPad 9.7 FullScreen",
+                        name: "iPad 9.7 Portrait FullScreen",
                         size: CGSize.iPad.Pro9_7,
                         traitCollection: UITraitCollection.iPad.fullScreen)
                     
