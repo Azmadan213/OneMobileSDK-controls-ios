@@ -2,4 +2,4 @@ language: Swif
 osx_image: xcode9.1
 
 script: 
- - fastlane test v
+ - fastlane test verify
