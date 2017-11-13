@@ -1,4 +1,20 @@
-language: Swif
+language: swift
+
 osx_image: xcode9.1
+xcode_workspace: PlayerControls
+xcode_scheme: Demo
+xcode_sdk: iphonesimulator11.1
+
+branches:
+ only:
+ - travis
+
+before_install:
+- brew update
+- brew install carthage
+- carthage update --platform iOS
+
+script:
+- xcodebuild clean build test -workspace PlayerControls.xcworkspace -scheme Demo -destination 'platform=Simulator,name=iPad Pro (12.9-inch),OS=11.1'
 
 script: fastlane verify
