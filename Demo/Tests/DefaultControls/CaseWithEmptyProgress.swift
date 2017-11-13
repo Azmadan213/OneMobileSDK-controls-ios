@@ -7,7 +7,6 @@
 //
 import UIKit
 import SnapshotTest
-
 @testable import PlayerControls
 
 

@@ -9,7 +9,6 @@ import UIKit
 import SnapshotTest
 @testable import PlayerControls
 
-//typealias presentation = HostWindow.Presentation
 
 class CaseWithThumbnail: SnapshotTest{
     

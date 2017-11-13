@@ -34,21 +34,21 @@ public class HostWindow: UIWindow {
             public enum X {
                 public static var portrait: Presentation {
                     return Presentation(
-                        name: "iPhone X Portrait",
+                        name: "iPhone_X_Portrait",
                         size: CGSize.iPhone.X,
                         traitCollection: UITraitCollection.iPhone.iPhoneRegular.portrait,
                         mask: iPhoneXMask.portrait)
                 }
                 public static var landscapeLeft: Presentation {
                     return Presentation(
-                        name: "iPhone X Landscape Left",
+                        name: "iPhone_X_Landscape_Left",
                         size: CGSize.iPhone.X.rotated,
                         traitCollection: UITraitCollection.iPhone.iPhoneRegular.portrait,
                         mask: iPhoneXMask.landscapeLeft)
                 }
                 public static var landscapeRight: Presentation {
                     return Presentation(
-                        name: "iPhone X Landscape Right",
+                        name: "iPhone_X_Landscape_Right",
                         size: CGSize.iPhone.X.rotated,
                         traitCollection: UITraitCollection.iPhone.iPhoneRegular.portrait,
                         mask: iPhoneXMask.landscapeRight)
@@ -57,14 +57,14 @@ public class HostWindow: UIWindow {
             public enum Eight {
                 public static var portrait: Presentation {
                     return Presentation(
-                        name: "iPhone 8 Portrait",
+                        name: "iPhone_8_Portrait",
                         size: CGSize.iPhone.Eight,
                         traitCollection: UITraitCollection.iPhone.iPhoneRegular.portrait,
                         mask: nil)
                 }
                 public static var landscape: Presentation {
                     return Presentation(
-                        name: "iPhone 8 Landscape",
+                        name: "iPhone_8_Landscape",
                         size: CGSize.iPhone.Eight.rotated,
                         traitCollection: UITraitCollection.iPhone.iPhoneRegular.portrait,
                         mask: nil)
@@ -74,14 +74,14 @@ public class HostWindow: UIWindow {
             public enum EightPlus {
                 public static var portrait: Presentation {
                     return Presentation(
-                        name: "iPhone 8 Plus Portrait",
+                        name: "iPhone_8_Plus_Portrait",
                         size: CGSize.iPhone.EightPlus,
                         traitCollection: UITraitCollection.iPhone.iPhonePlus.portrait,
                         mask: nil)
                 }
                 public static var landscape: Presentation {
                     return Presentation(
-                        name: "iPhone 8 Plus Landscape",
+                        name: "iPhone_8_Plus_Landscape",
                         size: CGSize.iPhone.EightPlus.rotated,
                         traitCollection: UITraitCollection.iPhone.iPhonePlus.portrait,
                         mask: nil)
@@ -90,13 +90,13 @@ public class HostWindow: UIWindow {
             public enum SE {
                 public static var portrait: Presentation {
                     return Presentation(
-                        name: "iPhone SE Portrait",
+                        name: "iPhone_SE_Portrait",
                         size: CGSize.iPhone.SE,
                         traitCollection: UITraitCollection.iPhone.iPhoneRegular.portrait, mask: nil)
                 }
                 public static var landscape: Presentation {
                     return Presentation(
-                        name: "iPhone SE Landscape",
+                        name: "iPhone_SE_Landscape",
                         size: CGSize.iPhone.SE.rotated,
                         traitCollection: UITraitCollection.iPhone.iPhoneRegular.portrait, mask: nil)
                 }
@@ -108,17 +108,17 @@ public class HostWindow: UIWindow {
             public enum Pro12_9 {
                 public enum Portrait{
                     public static let fullScreen = Presentation(
-                        name: "iPad 12.9 Portrait FullScreen",
+                        name: "iPad_12.9_Portrait_FullScreen",
                         size: CGSize.iPad.Pro12_9,
                         traitCollection: UITraitCollection.iPad.fullScreen)
                     
                     public static let twoThirds = Presentation(
-                        name: "iPad 12.9 Portrait SplitView 2:3",
+                        name: "iPad_12.9_Portrait_SplitView_2:3",
                         size: CGSize.iPad.Pro12_9.splitViewTwoThirds,
                         traitCollection: UITraitCollection.iPad.splitTwoThirds)
                     
                     public static let oneThirds = Presentation(
-                        name: "iPad 12.9 Portrait SplitView 1:3",
+                        name: "iPad_12.9_Portrait_SplitView_1:3",
                         size: CGSize.iPad.Pro12_9.splitViewOneThird,
                         traitCollection: UITraitCollection.iPad.splitOneThird)
                     
@@ -126,22 +126,22 @@ public class HostWindow: UIWindow {
                 public enum Landscape {
                     
                     public static let fullScreen = Presentation(
-                        name: "iPad 12.9 Landscape FullScreen",
+                        name: "iPad_12.9_Landscape_FullScreen",
                         size: CGSize.iPad.Pro12_9.rotated,
                         traitCollection: UITraitCollection.iPad.fullScreen)
                     
                     public static let half = Presentation(
-                        name: "iPad 12.9 Landscape SplitView 1:2",
+                        name: "iPad_12.9_Landscape_SplitView_1:2",
                         size: CGSize.iPad.Pro12_9.rotated.splitViewHalf,
                         traitCollection: UITraitCollection.iPad.splitHalfFor12_9)
                     
                     public static let twoThird = Presentation(
-                        name: "iPad 12.9 Landscape SplitView 2:3",
+                        name: "iPad_12.9_Landscape_SplitView_2:3",
                         size: CGSize.iPad.Pro12_9.rotated.splitViewTwoThirds,
                         traitCollection: UITraitCollection.iPad.splitTwoThirds)
                     
                     public static let oneThird = Presentation(
-                        name: "iPad 12.9 Landscape SplitView 1:3",
+                        name: "iPad_12.9_Landscape_SplitView_1:3",
                         size: CGSize.iPad.Pro12_9.rotated.splitViewOneThird,
                         traitCollection: UITraitCollection.iPad.splitOneThird)
                     
@@ -156,33 +156,33 @@ public class HostWindow: UIWindow {
                         traitCollection: UITraitCollection.iPad.fullScreen)
                     
                     public static let TwoThirds = Presentation(
-                        name: "iPad 10.5 Portrait SplitView 2:3",
+                        name: "iPad_10.5_Portrait_SplitView_2:3",
                         size: CGSize.iPad.Pro10_5.splitViewTwoThirds,
                         traitCollection: UITraitCollection.iPad.splitTwoThirds)
                     
                     public static let OneThirds = Presentation(
-                        name: "iPad 10.5 Portrait SplitView 1:3",
+                        name: "iPad_10.5_Portrait_SplitView_1:3",
                         size: CGSize.iPad.Pro10_5.splitViewOneThird,
                         traitCollection: UITraitCollection.iPad.splitOneThird)
                 }
                 public enum Landscape {
                     public static let fullScreen = Presentation(
-                        name: "iPad 10.5 Landscape FullScreen",
+                        name: "iPad_10.5_Landscape_FullScreen",
                         size: CGSize.iPad.Pro10_5.rotated,
                         traitCollection: UITraitCollection.iPad.fullScreen)
                     
                     public static let half = Presentation(
-                        name: "iPad 10.5 Landscape SplitView 1:2",
+                        name: "iPad_10.5_Landscape_SplitView_1:2",
                         size: CGSize.iPad.Pro10_5.rotated.splitViewHalf,
                         traitCollection: UITraitCollection.iPad.splitHalf)
                     
                     public static let twoThird = Presentation(
-                        name: "iPad 10.5 Landscape SplitView 2:3",
+                        name: "iPad_10.5_Landscape_SplitView_2:3",
                         size: CGSize.iPad.Pro10_5.rotated.splitViewTwoThirds,
                         traitCollection: UITraitCollection.iPad.splitTwoThirds)
                     
                     public static let oneThird = Presentation(
-                        name: "iPad 10.5 Landscape SplitView 1:3",
+                        name: "iPad_10.5_Landscape_SplitView_1:3",
                         size: CGSize.iPad.Pro10_5.rotated.splitViewOneThird,
                         traitCollection: UITraitCollection.iPad.splitHalf)
                 }
@@ -196,33 +196,33 @@ public class HostWindow: UIWindow {
                         traitCollection: UITraitCollection.iPad.fullScreen)
                     
                     public static let TwoThirds = Presentation(
-                        name: "iPad 9.7 Portrait SplitView 2:3",
+                        name: "iPad_9.7_Portrait_SplitView_2:3",
                         size: CGSize.iPad.Pro9_7.splitViewTwoThirds,
                         traitCollection: UITraitCollection.iPad.splitTwoThirds)
                     
                     public static let OneThirds = Presentation(
-                        name: "iPad 9.7 Portrait SplitView 1:3",
+                        name: "iPad_9.7_Portrait_SplitView_1:3",
                         size: CGSize.iPad.Pro9_7.splitViewOneThird,
                         traitCollection: UITraitCollection.iPad.splitOneThird)
                 }
                 public enum Landscape {
                     public static let fullScreen = Presentation(
-                        name: "iPad 9.7 Landscape FullScreen",
+                        name: "iPad_9.7_Landscape_FullScreen",
                         size: CGSize.iPad.Pro9_7.rotated,
                         traitCollection: UITraitCollection.iPad.fullScreen)
                     
                     public static let half = Presentation(
-                        name: "iPad 9.7 Landscape SplitView 1:2",
+                        name: "iPad_9.7_Landscape_SplitView_1:2",
                         size: CGSize.iPad.Pro9_7.rotated.splitViewHalf,
                         traitCollection: UITraitCollection.iPad.splitHalf)
                     
                     public static let twoThird = Presentation(
-                        name: "iPad 9.7 Landscape SplitView 2:3",
+                        name: "iPad_9.7_Landscape_SplitView_2:3",
                         size: CGSize.iPad.Pro9_7.rotated.splitViewTwoThirds,
                         traitCollection: UITraitCollection.iPad.splitTwoThirds)
                     
                     public static let oneThird = Presentation(
-                        name: "iPad 9.7 Landscape SplitView 1:3",
+                        name: "iPad_9.7_Landscape_SplitView_1:3",
                         size: CGSize.iPad.Pro9_7.rotated.splitViewOneThird,
                         traitCollection: UITraitCollection.iPad.splitHalf)
                 }

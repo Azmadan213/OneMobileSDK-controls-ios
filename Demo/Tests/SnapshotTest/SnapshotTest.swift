@@ -15,6 +15,7 @@ open class SnapshotTest: FBSnapshotTestCase {
     
     override open func setUp() {
         super.setUp()
+        isDeviceAgnostic = false
         guard let record = ProcessInfo.processInfo.environment["RECORD_MODE"] else { return }
         if record == "TRUE" {
             recordMode = true
