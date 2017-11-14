@@ -13,7 +13,9 @@ branches:
 before_install:
 - brew update
 - brew install carthage
+- cd Demo
 - carthage update --platform iOS
+- cd ..
 - brew cask install fastlane
 
 script: fastlane verify
