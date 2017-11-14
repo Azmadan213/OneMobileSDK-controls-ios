@@ -20,3 +20,8 @@ before_install:
 - brew cask install fastlane
 
 script: fastlane verify
+
+after_success: 
+- 'ASSETID=$(curl -s -H "Authorization: token 7df813dd3d4ee046ec74580a1b72b3e111ec1522" "https://api.github.com/repos/Azmadan213/OneMobileSDK-controls-ios/tree/travis" | jq ".[0].id")'
+#- 'curl -XDELETE -s -H "Authorization: token ${BUILD_KEY}" "https://api.github.com/repos/Azmadan213/OneMobileSDK-controls-ios/tree/travis/assets/$ASSETID"'
+- 'curl -XPOST -s -H "Authorization: token 7df813dd3d4ee046ec74580a1b72b3e111ec1522" -H "Content-Type: application/zip" --data-binary @./Fillable-1.0-SNAPSHOT.zip "https://uploads.github.com/repos/Azmadan213/OneMobileSDK-controls-ios/tree/travis/assets?name=qwe"'
